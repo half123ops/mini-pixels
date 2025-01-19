@@ -104,6 +104,3 @@ void ColumnVector::add(int64_t value) {
 void ColumnVector::add(int value) {
     throw new std::runtime_error("Adding int is not supported");
 }
-
-
-

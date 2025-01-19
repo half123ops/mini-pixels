@@ -127,5 +127,3 @@ ColumnWriter::ColumnWriter(std::shared_ptr<TypeDescription> type,
     columnChunkIndex->set_nullspadding(nullsPadding);
     columnChunkIndex->set_isnullalignment(ISNULL_ALIGNMENT);
 }
-
-

@@ -28,6 +28,7 @@
 #include "encoding/RunLenIntEncoder.h"
 
 class TimestampColumnWriter : public ColumnWriter{
+public:
     TimestampColumnWriter(std::shared_ptr<TypeDescription> type, std::shared_ptr<PixelsWriterOption> writerOption);
 
     int write(std::shared_ptr<ColumnVector> vector, int length) override;
@@ -35,7 +36,7 @@ class TimestampColumnWriter : public ColumnWriter{
     void newPixel() override;
     void writeCurPartTimestamp(std::shared_ptr<ColumnVector> columnVector, long* values, int curPartLength, int curPartOffset);
     bool decideNullsPadding(std::shared_ptr<PixelsWriterOption> writerOption) override;
-    pixels::proto::ColumnEncoding getColumnChunkEncoding() const;
+    pixels::proto::ColumnEncoding getColumnChunkEncoding();
 private:
     bool runlengthEncoding;
     std::unique_ptr<RunLenIntEncoder> encoder;

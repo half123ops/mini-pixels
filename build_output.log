@@ -1,0 +1,887 @@
+mkdir -p "third-party/protobuf/cmake/build" && cd "third-party/protobuf/cmake/build" && \
+cmake -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release ../.. -DCMAKE_POSITION_INDEPENDENT_CODE=ON \
+	-Dprotobuf_BUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=./ && \
+make -j install
+-- 
+-- 3.21.6.0
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/atri/mini-pixels/third-party/protobuf/cmake/build
+make[1]: warning: -j0 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+make[2]: Entering directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+make[3]: Entering directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+make[3]: Entering directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+make[3]: Leaving directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+[ 16%] Built target libprotobuf-lite
+make[3]: Leaving directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+[ 57%] Built target libprotobuf
+make[3]: Entering directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+make[3]: Leaving directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+[ 99%] Built target libprotoc
+make[3]: Entering directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+make[3]: Leaving directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+[100%] Built target protoc
+make[2]: Leaving directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotobuf-lite.so.3.21.6.0
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotobuf-lite.so.32
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotobuf-lite.so
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotobuf.so.3.21.6.0
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotobuf.so.32
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotobuf.so
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotoc.so.3.21.6.0
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotoc.so.32
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/libprotoc.so
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/bin/protoc-3.21.6.0
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/bin/protoc
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/pkgconfig/protobuf.pc
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/pkgconfig/protobuf-lite.pc
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/any.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/any.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/api.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/arena.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/arena_impl.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/arenastring.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/arenaz_sampler.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/code_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/command_line_interface.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/cpp/file.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/cpp/cpp_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/cpp/generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/cpp/helpers.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/cpp/names.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/csharp/csharp_doc_comment.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/csharp/csharp_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/csharp/csharp_names.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/csharp/csharp_options.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/importer.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/java/generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/java/java_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/java/kotlin_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/java/names.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/objectivec/objectivec_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/objectivec/objectivec_helpers.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/parser.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/php/php_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/plugin.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/plugin.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/python/generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/python/pyi_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/python/python_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/ruby/ruby_generator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/descriptor.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/descriptor.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/descriptor_database.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/duration.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/dynamic_message.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/empty.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/endian.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/explicitly_constructed.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/extension_set.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/extension_set_inl.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/field_access_listener.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/field_mask.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/generated_enum_reflection.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/generated_enum_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/generated_message_bases.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/generated_message_reflection.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/generated_message_tctable_decl.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/generated_message_tctable_impl.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/generated_message_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/has_bits.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/implicit_weak_message.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/inlined_string_field.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/coded_stream.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/gzip_stream.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/io_win32.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/printer.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/strtod.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/tokenizer.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/zero_copy_stream.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/zero_copy_stream_impl.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/io/zero_copy_stream_impl_lite.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/map.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/map_entry.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/map_entry_lite.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/map_field.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/map_field_inl.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/map_field_lite.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/map_type_handler.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/message.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/message_lite.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/metadata.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/metadata_lite.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/parse_context.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/port.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/port_def.inc
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/port_undef.inc
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/reflection.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/reflection_ops.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/repeated_field.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/repeated_ptr_field.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/service.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/source_context.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/struct.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/bytestream.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/callback.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/casts.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/common.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/hash.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/logging.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/macros.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/map_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/mutex.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/once.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/platform_macros.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/port.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/status.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/stl_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/stringpiece.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/strutil.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/stubs/template_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/text_format.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/timestamp.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/type.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/unknown_field_set.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/util/delimited_message_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/util/field_comparator.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/util/field_mask_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/util/json_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/util/message_differencer.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/util/time_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/util/type_resolver.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/util/type_resolver_util.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/wire_format.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/wire_format_lite.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/wrappers.pb.h
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/any.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/api.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/plugin.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/descriptor.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/duration.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/empty.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/field_mask.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/source_context.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/struct.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/timestamp.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/type.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/wrappers.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/any.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/api.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/compiler/plugin.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/descriptor.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/duration.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/empty.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/field_mask.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/source_context.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/struct.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/timestamp.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/type.proto
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/include/google/protobuf/wrappers.proto
+-- Old export file "/home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/cmake/protobuf/protobuf-targets.cmake" will be replaced.  Removing files [/home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/cmake/protobuf/protobuf-targets-release.cmake].
+-- Up-to-date: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/cmake/protobuf/protobuf-targets.cmake
+-- Installing: /home/atri/mini-pixels/third-party/protobuf/cmake/build/lib/cmake/protobuf/protobuf-targets-release.cmake
+make[1]: Leaving directory '/home/atri/mini-pixels/third-party/protobuf/cmake/build'
+mkdir -p  build/debug && \
+cmake   -DDUCKDB_EXTENSION_NAMES="pixels" -DDUCKDB_EXTENSION_PIXELS_PATH="/home/atri/mini-pixels/" -DDUCKDB_EXTENSION_PIXELS_SHOULD_LINK="TRUE" -DDUCKDB_EXTENSION_PIXELS_INCLUDE_PATH="/home/atri/mini-pixels/include" -DCMAKE_PREFIX_PATH=/home/atri/mini-pixels/third-party/protobuf/cmake/build -DPIXELS_SRC=""  -DEXTENSION_STATIC_BUILD=1 -DCMAKE_BUILD_TYPE=Debug -DEXTENSION_STATIC_BUILD=1 -DBUILD_TPCH_EXTENSION=1 -DBUILD_BENCHMARKS=1 -DBUILD_PARQUET_EXTENSION=1   -S pixels-duckdb/ -B build/debug && \
+cmake --build build/debug --config Debug
+fatal: No names found, cannot describe anything.
+CMake Warning at CMakeLists.txt:300 (message):
+  git is available (at /usr/bin/git) but has failed to execute 'describe
+  --tags --long', likely due to shallow clone.  Consider providing explicit
+  OVERRIDE_GIT_DESCRIBE or clone with tags.  Continuing with dummy version
+  v0.0.1
+
+
+-- git hash dd415bb23c, version v0.0.1, extension folder v0.0.1
+-- Extensions will be deployed to: /home/atri/mini-pixels/build/debug/repository
+-- Load extension 'pixels' from '/home/atri/mini-pixels/'
+-- Load extension 'parquet' from '/home/atri/mini-pixels/pixels-duckdb/extensions' @ v0.0.1
+-- Load extension 'tpch' from '/home/atri/mini-pixels/pixels-duckdb/extensions' @ v0.0.1
+-- Load extension 'jemalloc' from '/home/atri/mini-pixels/pixels-duckdb/extensions' @ v0.0.1
+/home/atri/mini-pixels/build/debug/extension/pixels/pixels-common/liburing/src
+CMake Warning (dev) at /usr/share/cmake-3.28/Modules/FetchContent.cmake:1331 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  /home/atri/mini-pixels/tests/writer/CMakeLists.txt:3 (FetchContent_Declare)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+duckdb export set: DuckDBExports
+-- Extensions linked into DuckDB: [pixels, parquet, tpch, jemalloc]
+CMake Deprecation Warning at examples/pixels-example/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at examples/parquet-example/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Configuring done (1.7s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/atri/mini-pixels/build/debug
+gmake[1]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[2]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  0%] Built target duckdb_platform_binary
+[  0%] Built target duckdb_yyjson
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  0%] Built target duckdb_optimizer_compressed_materialization
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  1%] Built target duckdb_optimizer
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  1%] Built target duckdb_optimizer_pullup
+[  1%] Built target duckdb_optimizer_matcher
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  1%] Built target duckdb_optimizer_join_order
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  1%] Built target duckdb_optimizer_pushdown
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  2%] Built target duckdb_optimizer_statistics_expr
+[  2%] Built target duckdb_optimizer_rules
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  2%] Built target duckdb_optimizer_statistics_op
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  2%] Built target duckdb_planner
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  2%] Built target duckdb_planner_expression
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  3%] Built target duckdb_bind_expression
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  3%] Built target duckdb_bind_query_node
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  3%] Built target duckdb_bind_statement
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  3%] Built target duckdb_expression_binders
+[  3%] Built target duckdb_bind_tableref
+[  4%] Built target duckdb_planner_filter
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  4%] Built target duckdb_planner_operator
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  5%] Built target duckdb_constraints
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  5%] Built target duckdb_planner_subquery
+[  5%] Built target duckdb_parser
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  5%] Built target duckdb_parsed_data
+[  5%] Built target duckdb_expression
+[  5%] Built target duckdb_query_node
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  5%] Built target duckdb_statement
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  5%] Built target duckdb_parser_tableref
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  5%] Built target duckdb_transformer_constraint
+[  5%] Built target duckdb_transformer_expression
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  5%] Built target duckdb_transformer_helpers
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  5%] Built target duckdb_transformer_statement
+[  5%] Built target duckdb_transformer_tableref
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  6%] Built target duckdb_aggr_algebraic
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  6%] Built target duckdb_core_functions
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  6%] Built target duckdb_aggr_distributive
+[  6%] Built target duckdb_aggr_holistic
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  6%] Built target duckdb_aggr_regr
+[  6%] Built target duckdb_aggr_nested
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  6%] Built target duckdb_func_array
+[  7%] Built target duckdb_func_bit
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  7%] Built target duckdb_func_blob
+[  7%] Built target duckdb_func_date
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  7%] Built target duckdb_func_enum
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  8%] Built target duckdb_func_generic
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  8%] Built target duckdb_func_list
+[  8%] Built target duckdb_func_map_nested
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  8%] Built target duckdb_func_math
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  9%] Built target duckdb_func_ops
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  9%] Built target duckdb_func_string
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[  9%] Built target duckdb_func_random
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[  9%] Built target duckdb_func_struct
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_union
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_debug
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_function
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_aggr
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_aggr_distr
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_cast
+[ 10%] Built target duckdb_union_cast
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_pragma
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_scalar
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_compressed_materialization
+[ 10%] Built target duckdb_func_generic_main
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_list_nested
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_ops_main
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 10%] Built target duckdb_func_seq
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_func_string_main
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_func_string_regexp
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_func_struct_main
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_func_system
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_func_table
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_table_func_system
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_func_table_version
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_arrow_conversion
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_catalog
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 11%] Built target duckdb_catalog_entries_dependency
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 12%] Built target duckdb_catalog_entries
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 12%] Built target duckdb_catalog_default_entries
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 12%] Built target duckdb_adbc
+[ 12%] Built target duckdb_adbc_nanoarrow
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 12%] Built target duckdb_common
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 12%] Built target duckdb_common_arrow
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 12%] Built target duckdb_common_arrow_appender
+[ 12%] Built target duckdb_common_crypto
+[ 12%] Built target duckdb_common_enums
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 13%] Built target duckdb_common_exception
+[ 13%] Built target duckdb_common_operators
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 13%] Built target duckdb_progress_bar
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 13%] Built target duckdb_common_tree_renderer
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 13%] Built target duckdb_common_serializer
+[ 13%] Built target duckdb_row_operations
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 14%] Built target duckdb_sort
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 14%] Built target duckdb_common_types
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 14%] Built target duckdb_common_types_column
+[ 14%] Built target duckdb_value_operations
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 14%] Built target duckdb_common_types_row
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 15%] Built target duckdb_vector_operations
+[ 15%] Built target duckdb_expression_executor
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 16%] Built target duckdb_execution
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 16%] Built target duckdb_nested_loop_join
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 16%] Built target duckdb_operator_aggregate
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 16%] Built target duckdb_csv_scanner
+[ 16%] Built target duckdb_csv_buffer_manager
+[ 16%] Built target duckdb_csv_sniffer
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 16%] Built target duckdb_csv_state_machine
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 16%] Built target duckdb_operator_filter
+[ 16%] Built target duckdb_csv_util
+[ 16%] Built target duckdb_operator_csv_table_function
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 16%] Built target duckdb_operator_helper
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_operator_join
+[ 17%] Built target duckdb_operator_persistent
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_operator_order
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_operator_projection
+[ 17%] Built target duckdb_operator_scan
+[ 17%] Built target duckdb_operator_schema
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_operator_set
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_execution_index
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_execution_index_art
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_physical_plan
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_main
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_main_capi
+[ 17%] Built target duckdb_main_capi_cast
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Building CXX object src/main/extension/CMakeFiles/duckdb_generated_extension_loader.dir/__/__/__/codegen/src/generated_extension_loader.cpp.o
+[ 17%] Building CXX object src/main/extension/CMakeFiles/duckdb_main_extension.dir/ub_duckdb_main_extension.cpp.o
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 17%] Built target duckdb_main_secret
+[ 17%] Built target duckdb_main_relation
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 18%] Built target duckdb_main_buffered_data
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 19%] Built target duckdb_main_settings
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 19%] Built target duckdb_main_chunk_scan_state
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 19%] Built target duckdb_parallel
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 19%] Built target duckdb_storage
+[ 19%] Built target duckdb_storage_buffer
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 19%] Built target duckdb_storage_compression
+[ 19%] Built target duckdb_storage_checkpoint
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 20%] Built target duckdb_storage_compression_alp
+[ 20%] Built target duckdb_storage_compression_chimp
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 20%] Built target duckdb_storage_metadata
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 20%] Built target duckdb_storage_serialization
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 20%] Built target duckdb_storage_statistics
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 20%] Built target duckdb_storage_table
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 21%] Built target duckdb_transaction
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 21%] Performing update step for 'liburing'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 23%] Built target duckdb_verification
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 23%] No patch step for 'liburing'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 24%] Built target dbgen
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 24%] No configure step for 'liburing'
+[ 25%] Performing build step for 'liburing'
+make[4]: Entering directory '/home/atri/mini-pixels/build/debug/extension/pixels/pixels-common/liburing'
+make[4]: warning: -j0 forced in submake: resetting jobserver mode.
+make[5]: Entering directory '/home/atri/mini-pixels/build/debug/extension/pixels/pixels-common/liburing/src'
+make[5]: Leaving directory '/home/atri/mini-pixels/build/debug/extension/pixels/pixels-common/liburing/src'
+make[4]: Leaving directory '/home/atri/mini-pixels/build/debug/extension/pixels/pixels-common/liburing'
+[ 25%] No install step for 'liburing'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 25%] Completed 'liburing'
+[ 34%] Built target jemalloc
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 34%] Built target liburing
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 34%] Built target duckdb_fmt
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 36%] Built target duckdb_pg_query
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 37%] Built target duckdb_miniz
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 41%] Built target duckdb_re2
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 42%] Built target duckdb_utf8proc
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 42%] Built target duckdb_hyperloglog
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 42%] Built target duckdb_skiplistlib
+[ 43%] Built target duckdb_fastpforlib
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 43%] Built target duckdb_fsst
+[ 46%] Built target duckdb_mbedtls
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 47%] Built target sqlite3_api_wrapper_sqlite3
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 47%] Built target sqlite3_udf_api
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 48%] Built target duckdb_linenoise
+[ 48%] Performing update step for 'boost'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 48%] Built target gtest
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+Building Boost.Build engine with toolset gcc... gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 52%] Built target test_api
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 52%] Built target test_sql_adbc
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 52%] Built target test_sql_capi
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_api_udf_function
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_appender
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_arrow_roundtrip
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_catalog
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_common
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_extensions
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_memory_leak
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_parallel_csv
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_secrets
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_serialization
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 53%] Built target test_filter
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 54%] Built target test_table_function
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 54%] Built target test_index
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 55%] Built target test_sql_interquery_parallelism
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 55%] Built target test_sql_storage
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 55%] Built target test_sql_storage_catalog
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 55%] Building CXX object test/sqlite/CMakeFiles/test_sqlite.dir/ub_test_sqlite.cpp.o
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 55%] Built target duckdb_generated_extension_loader
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 56%] Built target test_ossfuzz
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 56%] Built target test_mbedtls
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 56%] Built target test_persistence
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 57%] Built target imdb
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 58%] Built target duckdb_benchmark_micro
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 58%] Built target duckdb_benchmark_tpch
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 58%] Built target duckdb_platform
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 63%] Built target pixels-common
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 63%] Built target gtest_main
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 63%] Built target gmock
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[3]: Entering directory '/home/atri/mini-pixels/build/debug'
+[ 63%] Building CXX object extension/pixels/pixels-core/CMakeFiles/pixels-core.dir/lib/PixelsWriterImpl.cpp.o
+In file included from /home/atri/mini-pixels/pixels-core/lib/PixelsWriterImpl.cpp:25:
+/home/atri/mini-pixels/pixels-core/include/PixelsWriterImpl.h:36:10: fatal error: unicode/timezone.h: No such file or directory
+   36 | #include <unicode/timezone.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[3]: *** [extension/pixels/pixels-core/CMakeFiles/pixels-core.dir/build.make:608: extension/pixels/pixels-core/CMakeFiles/pixels-core.dir/lib/PixelsWriterImpl.cpp.o] Error 1
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[2]: *** [CMakeFiles/Makefile2:8214: extension/pixels/pixels-core/CMakeFiles/pixels-core.dir/all] Error 2
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 63%] Built target test_sqlite
+tools/build/src/engine/b2
+Unicode/ICU support for Boost.Regex?... not found.
+Backing up existing Boost.Build configuration in project-config.jam.1
+Generating Boost.Build configuration in project-config.jam for gcc...
+
+Bootstrapping is done. To build, run:
+
+    ./b2
+    
+To generate header files, run:
+
+    ./b2 headers
+
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+
+   - Command line help:
+     ./b2 --help
+     
+   - Getting started guide: 
+     http://www.boost.org/more/getting_started/unix-variants.html
+     
+   - Boost.Build documentation:
+     http://www.boost.org/build/
+
+[ 64%] No patch step for 'boost'
+[ 64%] Performing configure step for 'boost'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 64%] Built target duckdb_main_extension
+-- boost configure command succeeded.  See also /home/atri/mini-pixels/build/debug/extension/pixels/pixels-cli/deps/src/boost-stamp/boost-configure-*.log
+[ 64%] Performing build step for 'boost'
+-- boost build command succeeded.  See also /home/atri/mini-pixels/build/debug/extension/pixels/pixels-cli/deps/src/boost-stamp/boost-build-*.log
+[ 64%] No install step for 'boost'
+[ 64%] Completed 'boost'
+gmake[3]: Leaving directory '/home/atri/mini-pixels/build/debug'
+[ 64%] Built target boost
+gmake[2]: Leaving directory '/home/atri/mini-pixels/build/debug'
+gmake[1]: *** [Makefile:136: all] Error 2
+gmake[1]: Leaving directory '/home/atri/mini-pixels/build/debug'
+make: *** [Makefile:53: debug] Error 2
