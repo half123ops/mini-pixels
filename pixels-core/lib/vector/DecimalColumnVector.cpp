@@ -4,6 +4,10 @@
 
 #include "vector/DecimalColumnVector.h"
 #include "duckdb/common/types/decimal.hpp"
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <algorithm>
 
 /**
  * The decimal column vector with precision and scale.
@@ -45,9 +49,13 @@ DecimalColumnVector::DecimalColumnVector(uint64_t len, int precision, int scale,
         memoryUsage += (uint64_t)sizeof(int32_t) * len;
     } else if (precision <= Decimal::MAX_WIDTH_INT64) {
         physical_type_ = PhysicalType::INT64;
+        posix_memalign(reinterpret_cast<void **>(&vector), 32,
+                       len * sizeof(int64_t));
         memoryUsage += (uint64_t)sizeof(uint64_t) * len;
     } else if (precision <= Decimal::MAX_WIDTH_INT128) {
         physical_type_ = PhysicalType::INT128;
+        posix_memalign(reinterpret_cast<void **>(&vector), 32,
+                       len * sizeof(int64_t));
         memoryUsage += (uint64_t)sizeof(uint64_t) * len;
     } else {
         throw std::runtime_error(
@@ -94,4 +102,64 @@ int DecimalColumnVector::getPrecision() {
 
 int DecimalColumnVector::getScale() {
 	return scale;
+}
+
+void DecimalColumnVector::ensureSize(uint64_t size, bool preserveData) {
+    ColumnVector::ensureSize(size, preserveData);
+    if (length < size) {
+        long *oldVector = vector;
+        posix_memalign(reinterpret_cast<void **>(&vector), 32, size * sizeof(int64_t));
+        if (preserveData) {
+            std::copy(oldVector, oldVector + length, vector);
+        }
+        delete[] oldVector;
+        memoryUsage += (long)sizeof(long) * (size - length);
+        resize(size);  
+    }
+}
+
+
+void DecimalColumnVector::add(std::string &value) {
+    std::transform(value.begin(), value.end(), value.begin(), ::tolower);
+    std::cout << "add string value:" << value << std::endl;
+    if (value == "true") {
+        add(1);
+    } else if (value == "false") {
+        add(0);
+    } else {
+        int pos = value.find('.');
+        if (pos == std::string::npos) {
+            // 没有小数点的情况，处理为整数
+            long lv = std::stol(value);  
+            int64_t v = lv * std::pow(10, scale); 
+            add(v); 
+        } else {
+            // 有小数点的情况，去掉小数点后将其处理为整数
+            int64_t lv = std::stol(value.substr(0, pos) + value.substr(pos + 1));
+            int64_t v = lv * std::pow(10, scale - (value.length() - pos - 1));  // 根据刻度和小数点后位数调整
+            add(v);
+        }
+    }
+}
+
+void DecimalColumnVector::add(bool value) {
+    std::cout << "add bool value:" << value << std::endl;
+    add(value ? 1 : 0);
+}
+
+void DecimalColumnVector::add(int64_t value) {
+    std::cout << "add int64_t value:" << value << std::endl;
+    std::cout << "writeIndex:" << writeIndex << std::endl;
+    std::cout << "length:" << length << std::endl;
+    if (writeIndex >= length) {
+        ensureSize(writeIndex * 2, true);  
+    }
+    int index = writeIndex++;
+    vector[index] = value;
+    isNull[index] = false;  
+}
+
+void DecimalColumnVector::add(int value) {
+    std::cout << "add int value:" << value << std::endl;
+    add(static_cast<int64_t>(value));  
 }
