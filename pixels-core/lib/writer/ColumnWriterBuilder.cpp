@@ -57,8 +57,8 @@ std::shared_ptr<ColumnWriter> ColumnWriterBuilder::newColumnWriter(std::shared_p
             return std::make_shared<DateColumnWriter>(type, writerOption);
         //case TypeDescription::DECIMAL:
         //    return std::make_shared<DecimalColumnWriter>(type, writerOption);
-        //case TypeDescription::TIMESTAMP:
-        //    return std::make_shared<TimestampColumnWriter>(type, writerOption);
+        case TypeDescription::TIMESTAMP:
+            return std::make_shared<TimestampColumnWriter>(type, writerOption);
         default:
             throw InvalidArgumentException("bad column type in ColumnWriterBuilder: " + std::to_string(type->getCategory()));
     }
