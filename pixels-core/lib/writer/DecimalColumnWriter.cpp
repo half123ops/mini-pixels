@@ -33,31 +33,31 @@ int DecimalColumnWriter::write(std::shared_ptr<ColumnVector> vector, int length)
     }
 
     long* values = columnVector->vector;  
-    std::shared_ptr<ByteBuffer> curVecPartitionBuffer;
+    std::shared_ptr<ByteBuffer> littleEndian;
     EncodingUtils encodingUtils;
 
     for (int i = 0; i < length; i++) {
         isNull[curPixelIsNullIndex++] = vector->isNull[i]; 
         curPixelEleIndex++;
 
-        curVecPartitionBuffer = std::make_shared<ByteBuffer>(sizeof(long));  
+        littleEndian = std::make_shared<ByteBuffer>(sizeof(long));  
 
         if (vector->isNull[i]) {
             hasNull = true;
             if (nullsPadding) {
                 // 如果是空值，且启用了填充，则填充 0
-                encodingUtils.writeLongLE(curVecPartitionBuffer, 0L);
+                encodingUtils.writeLongLE(littleEndian, 0L);
             }
         } else {
             // 如果不是空值，按字节序写入数据
             if (byteOrder == ByteOrder::PIXELS_LITTLE_ENDIAN) {
-                encodingUtils.writeLongLE(curVecPartitionBuffer, values[i]);
+                encodingUtils.writeLongLE(littleEndian, values[i]);
             } else {
-                encodingUtils.writeLongBE(curVecPartitionBuffer, values[i]);
+                encodingUtils.writeLongBE(littleEndian, values[i]);
             }
         }
 
-        outputStream->putBytes(curVecPartitionBuffer->getPointer(), curVecPartitionBuffer->getWritePos());
+        outputStream->putBytes(littleEndian->getPointer(), littleEndian->getWritePos());
 
         if (curPixelEleIndex >= pixelStride) {
             ColumnWriter::newPixel();
